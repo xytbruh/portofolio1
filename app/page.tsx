@@ -1,6 +1,7 @@
-import Link from "next/link";
 import Header from "./layouts/Header";
 import Welcome from "./page/Welcome";
+import Services from "./page/Services";
+import Features from "./page/Features";
 
 export default function Home() {
   return (
@@ -8,6 +9,8 @@ export default function Home() {
       <Header />
       <main>
         <Welcome />
+        <Services />
+        <Features />
       </main>
     </>
   );

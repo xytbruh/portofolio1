@@ -1,33 +1,31 @@
 import React from "react";
+import { FaPhone } from "react-icons/fa";
 
 export default function Welcome() {
   return (
-    <section className="relative mx-[135px] my-1 border-inherit">
-      <div className="flex flex-row items-center justify-between py-1 px-6 space-x-24">
-        <div className="w-full">
-          <h2 className="text-[#06258B] pb-4 mt-12 text-[19px] font-semibold">
-            Your Website From Start Up
-          </h2>
-          <h1 className="font-bold text-[54px]">
-            For Development IT Solutions
-          </h1>
-          <p className="pt-8 text-[17px] font-medium text-[#7a7a7a]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et.
-          </p>
-          <div className="pt-12 inline-flex">
+    <section className="relative mx-[135px] my-8 border-inherit">
+      <div className="grid grid-cols-2 gap-10 py-3">
+        <div>
+          <h2 className="text-primary pb-4 mt-12 text-[19px] font-semibold">Hai, Selamat Datang</h2>
+          <h1 className="font-bold text-[54px]">Selamat melihat-lihat website gabut saya</h1>
+          <p className="pt-8 text-[17px] font-medium text-[#7a7a7a]">Website ini dibuat dengan full tailwind-css dan dengan framework next js</p>
+          <div className="pt-12 inline-flex items-center space-x-9">
             <div className="flex">
               <a href="" className="btn">
-                Get A Quote
+                Berikan Saran
               </a>
             </div>
             <div className="inline">
-              <h5 className="">Call Us</h5>
-              <h6>0086764</h6>
+              <h5 className="text-primary text-center">Call Us</h5>
+              <h6 className="flex ">
+                <FaPhone /> 083837189468
+              </h6>
             </div>
           </div>
         </div>
-        <img src="home.png" className="bg-cover" alt="" />
+        <div className="m-auto">
+          <img src="dimas2.png" className="bg-cover" alt="" />
+        </div>
       </div>
     </section>
   );
